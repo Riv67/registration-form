@@ -13,35 +13,35 @@
 
 <body>
 
-  <section class= "pad-t-2 pad-b-2 max-length">
+  <section class="pad-t-2 pad-b-2 max-length">
     <div>
       <h1>Want to go to Mars?</h1>
-      <p>We’re looking for super-awesome human beings who want to make the long trek to Mars for the adventure of a lifetime.</p>
+      <p class="mega">We’re looking for super-awesome human beings who want to make the long trek to Mars for the adventure of a lifetime.</p>
     </div>
 
     <form method="POST" action="https://formspree.io/bosc0022@algonquinlive.com">
       <fieldset>
-        <legend>Personal Details</legend>
+        <legend class="italics">Personal details</legend>
 
         <div class="grid">
-          <div class="unit push push-r">
+          <div class="name unit push xs-1 s-1 m-1 l-1-2">
             <label for="name">Name</label>
-            <input id="name"required>
+            <input id="name" required>
           </div>
-          <div class="unit push">
+          <div class="unit push xs-1 s-1 m-1 l-1-2">
             <label for="age">Age</label>
             <input id="age" type="number">
           </div>
         </div>
 
         <div class="grid push">
-          <div class="unit push push-r">
+          <div class="email unit push xs-1 s-1 m-1 l-1-2">
             <label for="email">Email</label>
             <input id="email" type="email" required>
           </div>
-          <div class="unit push">
-            <label for="physical fitness">Physical Fitness</label>
-            <select id="physical fitness">
+          <div class="unit push xs-1 s-1 m-1 l-1-2">
+            <label for="fitness">Physical fitness</label>
+            <select id="fitness">
               <option>Super-human</option>
               <option>Fit as a fiddle</option>
               <option>Not terribly strong</option>
@@ -57,7 +57,7 @@
 
       </fieldset>
       <fieldset>
-        <legend class="push">Mission Statement</legend>
+        <legend class="push italic">Mission statement</legend>
 
         <div class="push">
           <label for="why">Why do you want to go to Mars?</label>
@@ -65,12 +65,11 @@
         </div>
       </fieldset>
       <div class="text-center">
-        <button class="btn  mega" type="submit">Register for the trip!</button>
+        <button class="btn" type="submit">Register for the trip!</button>
       </div>
 
     </form>
   </section>
-
 
 </body>
 </html>

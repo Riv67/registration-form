@@ -1,9 +1,19 @@
-body {
-  font-family: 'Open Sans', sans-serif;
+html {
+  font-family: "Open Sans", sans-serif;
   background-color: #f2f2f2;
+  color: #000;
 }
 
 section {
   background-color: #fff;
   padding: 1rem;
+}
+
+.name,
+.email {
+  padding-right: .5rem;
+}
+
+h1 {
+  border-bottom: 1px solid;
 }
