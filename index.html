@@ -21,27 +21,27 @@
 
     <form method="POST" action="https://formspree.io/bosc0022@algonquinlive.com">
       <fieldset>
-        <legend class="italics">Personal details</legend>
+        <legend class="italic push-1-2">Personal details</legend>
 
         <div class="grid">
           <div class="name unit push xs-1 s-1 m-1 l-1-2">
             <label for="name">Name</label>
-            <input id="name" required>
+            <input id="name" name="name" required>
           </div>
           <div class="unit push xs-1 s-1 m-1 l-1-2">
             <label for="age">Age</label>
-            <input id="age" type="number">
+            <input id="age" name="age" type="number">
           </div>
         </div>
 
         <div class="grid push">
           <div class="email unit push xs-1 s-1 m-1 l-1-2">
             <label for="email">Email</label>
-            <input id="email" type="email" required>
+            <input id="email" type="email" name="email"required>
           </div>
           <div class="unit push xs-1 s-1 m-1 l-1-2">
             <label for="fitness">Physical fitness</label>
-            <select id="fitness">
+            <select id="fitness" name="select">
               <option>Super-human</option>
               <option>Fit as a fiddle</option>
               <option>Not terribly strong</option>
@@ -52,7 +52,7 @@
 
         <div>
           <label for="address">Address</label>
-          <textarea id="address"></textarea>
+          <textarea id="address" name="address"></textarea>
         </div>
 
       </fieldset>
@@ -63,13 +63,15 @@
           <label for="why">Why do you want to go to Mars?</label>
           <textarea id="why"></textarea>
         </div>
-      </fieldset>
       <div class="text-center">
         <button class="btn" type="submit">Register for the trip!</button>
       </div>
+      </fieldset>
 
     </form>
   </section>
+
+  <input type:"hidden" name="_subject" value="request to join mission">
 
 </body>
 </html>
