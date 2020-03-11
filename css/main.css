@@ -9,11 +9,20 @@ section {
   padding: 1rem;
 }
 
-.name,
-.email {
-  padding-right: .5rem;
-}
-
 h1 {
   border-bottom: 1px solid;
+}
+
+@media only screen and (min-width: 60em) {
+
+  .name,
+  .email {
+    padding-right: .5rem;
+  }
+
+  .age,
+  .fitness {
+    padding-left: .5rem;
+  }
+
 }
