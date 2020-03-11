@@ -7,12 +7,13 @@
   <link href="css/grid.css" rel="stylesheet">
   <link href="css/type.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
   <meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
 
 <body>
 
-  <section>
+  <section class= "pad-t-2 pad-b-2 max-length">
     <div>
       <h1>Want to go to Mars?</h1>
       <p>We’re looking for super-awesome human beings who want to make the long trek to Mars for the adventure of a lifetime.</p>
@@ -23,22 +24,22 @@
         <legend>Personal Details</legend>
 
         <div class="grid">
-          <div class="unit">
+          <div class="unit push push-r">
             <label for="name">Name</label>
             <input id="name"required>
           </div>
-          <div class="unit">
+          <div class="unit push">
             <label for="age">Age</label>
             <input id="age" type="number">
           </div>
         </div>
 
-        <div class="grid">
-          <div class="unit">
+        <div class="grid push">
+          <div class="unit push push-r">
             <label for="email">Email</label>
             <input id="email" type="email" required>
           </div>
-          <div class="unit">
+          <div class="unit push">
             <label for="physical fitness">Physical Fitness</label>
             <select id="physical fitness">
               <option>Super-human</option>
@@ -56,15 +57,15 @@
 
       </fieldset>
       <fieldset>
-        <legend>Mission Statement</legend>
+        <legend class="push">Mission Statement</legend>
 
-        <div>
+        <div class="push">
           <label for="why">Why do you want to go to Mars?</label>
           <textarea id="why"></textarea>
         </div>
       </fieldset>
-      <div>
-        <button class="btn btn-light mega" type="submit">Register for the trip!</button>
+      <div class="text-center">
+        <button class="btn  mega" type="submit">Register for the trip!</button>
       </div>
 
     </form>
