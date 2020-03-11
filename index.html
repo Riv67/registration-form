@@ -13,7 +13,7 @@
 
   <section>
     <div>
-      <h1>Want to go to Mars></h1>
+      <h1>Want to go to Mars?</h1>
       <p>We’re looking for super-awesome human beings who want to make the long trek to Mars for the adventure of a lifetime.</p>
     </div>
 
@@ -32,11 +32,42 @@
           </div>
         </div>
 
+        <div class="grid">
+          <div class="unit">
+            <label for="email">Email</label>
+            <input id="email" type="email" required>
+          </div>
+          <div class="unit">
+            <label for="physical fitness">Physical Fitness</label>
+            <select id="physical fitness">
+              <option>Super-human</option>
+              <option>Fit as a fiddle</option>
+              <option>Not terribly strong</option>
+              <option>A little couch-potato-y</option>
+            </select>
+          </div>
+        </div>
+
         <div>
-          <label for="email">Email</label>
-          <input id="email" type="email" required>
+          <label for="address">Address</label>
+          <textarea id="address"></textarea>
+        </div>
+
+      </fieldset>
+      <fieldset>
+        <legend>Mission Statement</legend>
+
+        <div>
+          <label for="why">Why do you want to go to Mars?</label>
+          <textarea id="why"></textarea>
         </div>
       </fieldset>
+      <div>
+        <button class="btn btn-light mega" type="submit">Send Message</button>
+      </div>
+
+      </form>
+
 
     </body>
     </html>
